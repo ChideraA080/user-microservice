@@ -1,10 +1,29 @@
 const users = [
   { id: 1, name: "Chidera" },
-  { id: 2, name: "Pamela" }
+  { id: 2, name: "Pam" }
 ];
 
+// GET users
 const getUsers = (req, res) => {
   res.json(users);
 };
 
-module.exports = { getUsers };
+// POST user
+const createUser = (req, res) => {
+  const { name } = req.body;
+
+  if (!name) {
+    return res.status(400).json({ message: "Name is required" });
+  }
+
+  const newUser = {
+    id: users.length + 1,
+    name
+  };
+
+  users.push(newUser);
+
+  res.status(201).json(newUser);
+};
+
+module.exports = { getUsers, createUser };
