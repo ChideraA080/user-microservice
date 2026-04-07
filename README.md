@@ -14,6 +14,7 @@ The application was deployed on ECS Fargate (serverless containers), eliminating
 
 This project reflects my ability to design and implement end-to-end DevOps solutions, combining infrastructure automation, containerization, and cloud deployment in a real-world scenario.
 
+
 ## Architecture
 
 Client (Browser)
@@ -37,6 +38,10 @@ Task Definition
 ↓
 
 Docker Container (Node.js App from Docker Hub)
+
+## App Architecture Diagram
+
+![App Architecture Diagram](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/CI_CD%20pipeline%20architecture%20diagram.png)
 
 ## Technologies Used
 
@@ -229,31 +234,73 @@ http://<alb_dns>
 
 After confirming the application is working, destroy resources to avoid unnecessary AWS charges:
 
+````bash
 terraform destroy
+````
 
 Type yes when prompted.
 
 ## Project Screenshots
 
-### Application Running in Browser
 
-![App](screenshots/app-running.png)
+### API user testing with Thuderclient
+
+![Api testing](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/IMG_20260331_165418.jpg)
+
+
+### Confirmation of Api user test on browser 
+
+![Api User Confirmation](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/IMG_20260331_165805.jpg)
+
+### Application Running on localhost in Browser
+
+![Container Runnng on local host](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/IMG_20260331_161510.jpg)
+
+### Application Running in Terminal
+
+![Runnin container on terminal](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/IMG_20260331_170101.jpg)
+
+### Application running with Dockerfile
+
+![App with Dockerfile](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/IMG_20260331_174150.jpg)
+
+
+### Image Pushed to Dockerhub
+
+![Image Pushed to Dockerhub](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/1000734523.jpg)
+
+### Image in Dockerhub
+
+![Image in Dockerhub](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/1000734588.jpg)
+
 
 ### ECS Cluster (Running Task)
 
-![ECS](screenshots/ecs-running.png)
+![ECS](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/IMG_20260402_094046.jpg)
 
 ### Load Balancer Configuration
 
-![ALB](screenshots/alb.png)
+![ALB](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/IMG_20260402_093235.jpg)
 
 ### Terraform Deployment Output
 
-![Terraform](screenshots/terraform-output.png)
+![Terraform](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/1000735727.jpg)
+
+### Application Running live in the Cloud via ALB in Browser
+
+![App in ALB](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/IMG_20260402_093052.jpg)
 
 ### CI/CD Pipeline Success
 
-![CI/CD](screenshots/cicd-success.png)
+![CI/CD](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/GITHUB%20ACTIONS%20PIPELINE.png)
+
+### Terraform Destroy Output
+
+![Terraform Destroy](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/IMG_20260402_100251.jpg)
+
+### ECS Cluster Terraform Destroy
+
+![ECS Cluster Terraform Destroy](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/IMG_20260402_113322.jpg)
 
 ## Security Best Practices
 
