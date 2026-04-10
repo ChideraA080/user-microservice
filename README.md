@@ -1,6 +1,6 @@
-# Node.js Microservice on AWS ECS (Fargate) with Terraform & CI/CD
+#  Building & Deploying a Node.js Microservice on AWS (ECS Fargate) with Terraform & CI/CD
 
-This project showcases a production-grade DevOps workflow where I designed, containerized, automated, and deployed a Node.js microservice on AWS using modern cloud and DevOps practices.
+This project showcases a production-grade DevOps workflow where I designed, built, containerized, automated, and deployed a Node.js microservice on AWS using modern cloud and DevOps practices.
 
 ## Project Overview
 
