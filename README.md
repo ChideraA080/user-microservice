@@ -280,6 +280,10 @@ Open in browser:
 
 http://<alb_dns>
 
+### Application Running live in the Cloud via ALB_Dns in Browser
+
+![App in ALB](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/IMG_20260402_093052.jpg)
+
 ### Step 7: Destroy Infrastructure (Cost Control Best Practice)
 
 After confirming the application is working, destroy resources to avoid unnecessary AWS charges:
@@ -335,10 +339,6 @@ Type yes when prompted.
 ### Terraform Deployment Output
 
 ![Terraform](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/1000735727.jpg)
-
-### Application Running live in the Cloud via ALB in Browser
-
-![App in ALB](https://github.com/ChideraA080/user-microservice/blob/main/Screenshots_user_microservice_Project/IMG_20260402_093052.jpg)
 
 ### CI/CD Pipeline Success
 
